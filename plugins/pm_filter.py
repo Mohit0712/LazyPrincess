@@ -335,7 +335,7 @@ async def next_page(bot, query):
 
     btn.insert(0,
         [ 
-	    InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/LazyDeveloper')
+	    InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/BhootBazar/132132')
         ] 
     )
 
@@ -427,7 +427,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             title = query.message.chat.title
 
         else:
-            return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+            return await query.answer('♥️ Thank You  ♥️')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
@@ -674,12 +674,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/Hdmovieprovider4UBot?startgroup=true')
         ], [
             InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/BhootBazar')
         ], [
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
         ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('Watch Tutorial', url='https://t.me/BhootBazar')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -707,7 +707,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper'),
+            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/BhootBazar'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -807,9 +807,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/BhootBazar")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://t.me/BhootBazar")
 
             ]]
             btn_lzdv = [
@@ -835,9 +835,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/BhootBazar")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://t.me/BhootBazar")
             ]]
             btn_lzdv = [
                 [
@@ -862,9 +862,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/BhootBazar")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://t.me/BhootBazar")
 
             ]]
             btn_lzdv = [
@@ -890,9 +890,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/BhootBazar")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://t.me/BhootBazar")
             ]]
             btn_lzdv = [
                 [
@@ -917,9 +917,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"hhttps://t.me/BhootBazar")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://t.me/BhootBazar")
 
             ]]
             btn_lzdv = [
@@ -945,9 +945,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/BhootBazar")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://t.me/BhootBazar")
             ]]
             btn_lzdv = [
                 [
@@ -972,9 +972,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"💛 Request More 💛", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/BhootBazar")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://t.me/BhootBazar")
 
             ]]
             btn_lzdv = [
