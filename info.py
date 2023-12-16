@@ -3,12 +3,12 @@ from os import getenv, environ
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
-    if value.lower() in ["true", "yes", "1", "enable", "y"]:
-        return True
-    elif value.lower() in ["false", "no", "0", "disable", "n"]:
-        return False
-    else:
-        return default
+if value.lower() in ["true", "yes", "1", "enable", "y"]:
+return True
+elif value.lower() in ["false", "no", "0", "disable", "n"]:
+return False
+else:
+return default
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
@@ -42,9 +42,9 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyDeveloper')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [Bhoot Bazar™](https://t.me/bhootbazar)</b>⚡\n\n🎦 <b>File Name: </b> ➥  <i> {file_caption}</i>\n⚙️ <b>File Size: </b><i>{file_size}</i> \n          ❤️<b>WE LOVE YOU</b>❤️\n🔥  ↭ <b>Join Now [MoviesAdda™](https://t.me/bhootbazar)</b> ↭  🔥")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [Bhoot Bazar™](https://t.me/bhootbazar)</b>⚡\n\n🎦 <b>File Name: </b> ➥ <i> {file_caption}</i>\n⚙️ <b>File Size: </b><i>{file_size}</i> \n ❤️<b>WE LOVE YOU</b>❤️\n🔥 ↭ <b>Join Now [MoviesAdda™](https://t.me/bhootbazar)</b> ↭ 🔥")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb Data by: @LazyDeveloper \n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟  ")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb Data by: @LazyDeveloper \n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 ")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
@@ -70,7 +70,7 @@ LAZY_AI_LOGS = int(environ.get("LAZY_AI_LOGS","")) #GIVE YOUR NEW LOG CHANNEL ID
 ADMIN_USRNM = environ.get('ADMIN_USRNM','real_heros') # WITHOUT @
 MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','@real_MoviesAdda2') # WITHOUT @
 DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','LayDeveloperr') # WITHOUT @
-LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','LayDeveloperr')  # WITHOUT @ [  add only handle - don't add full url  ] 
+LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','LayDeveloperr') # WITHOUT @ [ add only handle - don't add full url ]
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+qAxoGBvSc34yNmU1") #[ without @ ]
 
 # Url Shortner
@@ -90,38 +90,38 @@ PORT = int(environ.get('PORT', 8080))
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
-    ON_HEROKU = True
-    APP_NAME = environ.get('APP_NAME')
+ON_HEROKU = True
+APP_NAME = environ.get('APP_NAME')
 else:
-    ON_HEROKU = False
+ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://selfincome.online/SelfIncome".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://selfincome.online/SelfIncome".format(FQDN, PORT)
+URL = "https://lazyopprince-379fc788e6cb.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
+"https://lazyopprince-379fc788e6cb.herokuapp.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
 MULTI_CLIENT = False
 name = str(environ.get('name', 'LazyPrincess'))
-PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
+PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200")) # 20 minutes
 if 'DYNO' in environ:
-    ON_HEROKU = True
-    APP_NAME = str(getenv('APP_NAME'))
+ON_HEROKU = True
+APP_NAME = str(getenv('APP_NAME'))
 
 else:
-    ON_HEROKU = False
+ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://selfincome.online/SelfIncome".format(FQDN)
+URL = "https://lazyopprince-379fc788e6cb.herokuapp.com/".format(FQDN)
 else:
-    URL = "https://selfincome.online/SelfIncome".format(FQDN)
+URL = "https://lazyopprince-379fc788e6cb.herokuapp.com/".format(FQDN)
 REPO_OWNER = "LazyDeveloperr"
 
 # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
 SELF_DELETE = environ.get('SELF_DELETE', True)
 if SELF_DELETE == "True":
-    SELF_DELETE = True
+SELF_DELETE = True
 
 # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
@@ -144,6 +144,6 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 # Please Don't remove credit.
 # Born to make history @LazyDeveloper !
 # Thank you LazyDeveloper for helping us in this Journey
-# 🥰  Thank you for giving me credit @LazyDeveloperr  🥰
-# for any error please contact me -> telegram@LazyDeveloperr or insta @LazyDeveloperr 
+# 🥰 Thank you for giving me credit @LazyDeveloperr 🥰
+# for any error please contact me -> telegram@LazyDeveloperr or insta @LazyDeveloperr
 # rip paid developers 🤣 - >> No need to buy paid source code while @LazyDeveloperr is here 😍😍
